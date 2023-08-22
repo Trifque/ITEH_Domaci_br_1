@@ -1,0 +1,88 @@
+* {
+
+    font-family: Papyrus;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+
+}
+
+/*Kvadrat za upisivanje podataka*/
+
+.login-forma {
+
+    width: 300px;
+    border: 10px solid rgb(0, 0, 0);
+    padding: 50px;
+    margin: auto;
+    background-color: rgb(196, 196, 196);
+    text-align: center;
+    padding: 150px;
+    align-content: center;
+
+  }
+
+  .login-forma .dugme-za-ulogovanje {
+
+    background:rgb(153, 128, 4) none repeat scroll 0 0;
+    border-color:rgb(153, 128, 4);
+    font-size: 20px;
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    
+}
+
+.login-forma .dugme-za-ulogovanje:hover {
+    background: rgb(255, 212, 0) none repeat scroll 0 0;
+    border-color: rgb(255, 212, 0);
+    color: black;
+    font-size: 20px;
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+}
+
+/*Slideshow u pozadini*/
+
+body{
+
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: SlideShowZaUlogovanje 15s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../images/Ulogovanje1.jpg');
+
+}
+
+
+
+@keyframes SlideShowZaUlogovanje {
+
+    0%{
+        background-image: url('../images/Ulogovanje1.jpg');
+    }
+
+    20%{
+        background-image: url('../images/Ulogovanje2.jpg');
+    }
+
+    40%{
+        background-image: url('../images/Ulogovanje3.jpg');
+    }
+
+    60%{
+        background-image: url('../images/Ulogovanje4.jpg');
+    }
+
+    80%{
+        background-image: url('../images/Ulogovanje5.jpg');
+    }
+
+}

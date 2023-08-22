@@ -1,0 +1,76 @@
+* {
+    font-family: Papyrus;
+}
+
+/*Naslov*/
+
+.jumbotron {
+    background-color: rgb(126, 124, 8);
+    float: center;
+    color: #000;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(126, 124, 8));
+}
+
+/*Pozadina*/
+
+body{
+    background-image: url("../images/glavna_strana.jpg" );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+/*Tri dugmica pri kraju*/
+
+#btn-sortiraj{
+    font-size: 18px;
+    color: white;
+    border-radius: 28px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(126, 124, 8));
+    border-color: black;
+    align-self: center;
+    text-align: center;
+}
+
+#btn-izmeni{
+    font-size: 18px;
+    color: white;
+    border-radius: 28px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(126, 124, 8));
+    border-color: black;
+    align-self: center;
+    text-align: center;
+}
+
+#btn-obrisi{
+    font-size: 18px;
+    color: white;
+    border-radius: 28px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(126, 124, 8));
+    border-color: black;
+    align-self: center;
+    text-align: center;
+}
+
+/*Popup za izmenu i prijavu novih nalazista*/
+
+.prijava-promena-form{
+    width: 80%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: rgba(160, 62, 129, 0);
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Da mi se inputi u popupovima ne prelivaju*/
+
+.form-control{
+    max-width: 500px;
+}
