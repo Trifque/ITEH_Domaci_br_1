@@ -1,3 +1,41 @@
+
+<!--Ovaj PHP kod sluzi da bi se proverili kredencijali za ulogovanje kao i za pokretanje sesije-->
+
+<?php
+
+require "DataBaseBroker.php";
+require "PHP_Klase/Arheolog.php";
+
+session_start();
+if(isset($_POST['username']) && isset($_POST['password'])){
+    $username  = $_POST['username'];
+    $upassword = $_POST['password'];
+
+    $arheolog = new Arheolog(1, null, null, null, null, $username, $upassword);
+    $odg      = Arheolog::logInArheolog($arheolog, $conn);
+
+    if($odg->num_rows == 1){
+        echo  `
+        <script>
+        console.log( "Uspesno ste se ulogovali.");
+        </script>
+        `;
+        $_SESSION['id_nalog'] = $arheolog->id_nalog;
+        header('Location: glavna_strana.php');
+        exit();
+    }else{
+        echo `
+        <script>
+        console.log( "Niste se ulogovali.");
+        </script>
+        `;
+    }
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
